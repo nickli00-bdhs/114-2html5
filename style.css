@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Pinyon+Script&display=swap');
+
+
+
+p {
+font-family: "Charm", cursive;  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background: linear-gradient(135deg, #fffbe7 60%, #ffe4e1 100%);
     font-family: 'Open Sans', Arial, sans-serif;
     color: #6f4e37;
     margin: 0;
     padding: 0;
+}
+.a{
+    margin:20px 0;
+    padding:35px 30px 30px 30px;
+    background-color:#fbf9cc;
 }
 
 #wrap {
@@ -14,6 +28,13 @@ body {
     border-radius: 18px;
     box-shadow: 0 8px 32px #f6bb9e44;
     border: 1px solid #f6bb9e;
+}
+
+#top
+{
+	position:fixed;
+	bottom:5px;
+	right:5px;
 }
 
 h1 {
@@ -51,4 +72,24 @@ img {
     box-shadow: 0 4px 16px #ffe4e122;
     max-width: 100%;
     margin-bottom: 24px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #7c5d48;
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255,255,255,0.42);
+  padding: 12px 0px 10px;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+header nav ul li a:hover {
+  text-decoration: underline double;
 }
