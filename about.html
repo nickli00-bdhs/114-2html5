@@ -1,24 +1,61 @@
-<!-- about.html -->
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-TW">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>關於我們</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="img/dog.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>關於我們</h1>
-    <img src="img/husky.jfif" alt="Husky" style="display:block;margin:0 auto 24px;">
+
+<header>
+  <h1>關於我們</h1>
+</header>
+
+<div class="container">
+
+  <!-- 個人介紹卡片 -->
+  <section class="about-card">
+    <img src="img/husky.jfif" alt="Husky">
     <h2>我們的故事</h2>
     <p>
-      我們是一群熱愛動物的夥伴，致力於打造溫馨舒適的網站，分享生活中的美好與感動。
+      我們是一群熱愛動物的夥伴，致力於打造溫馨舒適的網站，
+      分享生活中的美好與感動。
     </p>
-    <h2>聯絡方式</h2>
+  </section>
+
+  <!-- 理念區塊 -->
+  <section class="about-card">
+    <h2>我們的理念</h2>
     <p>
-      歡迎透過 <a href="mailto:info@example.com">info@example.com</a> 聯絡我們。
+      🐾 用設計傳遞溫度<br>
+      🎨 用創作紀錄生活<br>
+      💛 用網站連結人與動物
     </p>
-    <a href="index.html">回首頁</a>
+  </section>
+
+  <!-- 聯絡方式 -->
+  <section class="about-card contact">
+    <h2>聯絡我們</h2>
+    <p>
+      歡迎透過以下方式與我們聯絡：
+    </p>
+
+    <a href="mailto:info@example.com">📧 info@example.com</a>
+  </section>
+
+  <!-- 返回 -->
+  <div class="back-home">
+    <a href="index.html">← 回首頁</a>
   </div>
+
+</div>
+
 </body>
 </html>
