@@ -15,19 +15,31 @@ body {
     padding: 0;
 }
 .a{
-    margin:20px 0;
-    padding:35px 30px 30px 30px;
+    max-width: 90%;
+    margin:10px 0;
+    padding:20px;
     background-color:#fbf9cc;
+    border-bottom: #333333 dotted;
+    text-align: center;
+}
+.a h2{
+  width: 50%;
+  background-color: #e5f0a9;
+  border-radius:10cap;
+  margin: 10px auto;
+  padding:10px 20px;
 }
 
 #wrap {
-    max-width: 800px;
     margin: 40px auto;
-    padding: 40px 32px;
-    background: #fffaf6;
+    padding: 20px 200px;
+    /*background: #fffaf6;
     border-radius: 18px;
     box-shadow: 0 8px 32px #f6bb9e44;
-    border: 1px solid #f6bb9e;
+    border: 1px solid #f6bb9e;*/
+
+    display: flex;
+    justify-content: space-between;
 }
 
 #top
@@ -92,4 +104,52 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline double;
+}
+
+
+main {
+  flex-basis: 70%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+}
+aside {
+  flex-basis: 30%;
+  margin: 0 0 0 10px;
+}
+
+aside nav {
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+aside nav ul {
+  font-size: 14px;
+}
+
+.my-favorites ul li {
+  list-style-type: square;
+  color: #7c5d48;
+  margin: 0 0 0 10px;
+}
+.my-favorites ul li a {
+  color: #333333;
+}
+.status-box ul li {
+  border-bottom: 1px solid #7c5d48;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+.status-box ul {
+  height: 240px;
+  overflow: hidden scroll;
 }
