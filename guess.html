@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猜數字</title>
+    <title>數字占卜 | 猜數字遊戲</title>
+    <link rel="stylesheet" href="style.css"> 
     <script src="guess.js" defer></script>
 </head>
 <body>
-  
-  <div>
-    <h1>猜數字遊戲</h1>
-    <label for="guessField">猜一個數字 (1 到 100):</label>
-    <input type="number" class="guessField" id="guessField" min="1" max="100">
-    <button class="guessSubmit">提交</button>
-    <div class="result"></div>
-    <div class="count"></div>
-  </div>
 
-    
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="guess.html">猜數字</a></li>
+            <li><a href="#">Draw</a></li>
+            <li><a href="#">Snake</a></li>
+            <li><a href="https://www.bdsh.ntpc.edu.tw/" target="_blank " >北大高中</a></li>
+          </ul>
+        </nav>
+    </header>
 
+    <div class="container">
+        <h1>Guess the Number</h1>
+        
+        <div class="about-card">
+            <h2>數字挑戰</h2>
+            <p>命運已經選定了一個 1 到 100 之間的數字，你能感應到它嗎？</p>
+            
+            <div class="game-controls">
+                <label for="guessField">輸入你的直覺：</label>
+                <input type="number" class="guessField" id="guessField" min="1" max="100" placeholder="1-100">
+                
+                <div style="margin-top: 20px;">
+                    <button class="guessSubmit btn-primary">提交答案</button>
+                    <button class="restartBtn">重新開始</button>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #f6e7d8; margin: 30px 0;">
+
+            <div class="status-box">
+                <div class="result" style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;">猜測結果：等待輸入...</div>
+                <div class="count">猜測次數：0</div>
+                <p>歷次嘗試紀錄：</p>
+                <p class="guesses" style="color: #d08c60; letter-spacing: 2px;"></p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="top">TOP</a>
 
 </body>
 </html>
